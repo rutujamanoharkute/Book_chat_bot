@@ -13,7 +13,7 @@ load_dotenv()
 openai.api_key = os.environ['OPENAI_API_KEY']
 
 CHROMA_PATH = "chroma"
-DATA_PATH = "data/books"
+DATA_PATH = ""
 
 def main():
     generate_data_store()
@@ -25,7 +25,7 @@ def generate_data_store():
 
 def load_documents():
     documents = []
-    for filename in os.listdir(DATA_PATH):
+    for filename in os.listdir("."):
         if filename.endswith(".pdf"):
             file_path = os.path.join(DATA_PATH, filename)
             text = extract_text_from_pdf(file_path)
@@ -71,3 +71,4 @@ def save_to_chroma(chunks: list[Document]):
 
 if __name__ == "__main__":
     main()
+
