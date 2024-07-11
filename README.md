@@ -74,7 +74,7 @@ export OPENAI_API_KEY='your-openai-api-key'
      - Give me an example of gameplay pattern.
 
 #### Tutorial Video
-For a detailed walkthrough, watch the step-by-step tutorial video: [RAG+Langchain Python Project: Easy AI/Chat For Your Docs](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+For a detailed walkthrough, watch the step-by-step tutorial video: 
 
 ---
 
