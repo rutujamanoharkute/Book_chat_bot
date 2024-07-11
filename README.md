@@ -1,5 +1,7 @@
 # Book Chatbot Based on Prof. Nik Bear Brown's Book
-![Uploading image.png…]()
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/011144f9-2e2c-4d6d-a0b2-2c2fcc53291e">
+
+
 
 #### Overview
 This project creates a chatbot that answers questions based on Prof. Nik Bear Brown's book. It leverages Langchain, ChromaDB, and OpenAI to provide accurate and contextual responses through a Streamlit interface.
