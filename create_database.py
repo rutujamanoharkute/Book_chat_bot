@@ -43,7 +43,7 @@ def extract_text_from_pdf(pdf_path):
 
 def split_text(documents: list[Document]):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
+        chunk_size=475,
         chunk_overlap=300,
         length_function=len,
         add_start_index=True,
@@ -71,4 +71,3 @@ def save_to_chroma(chunks: list[Document]):
 
 if __name__ == "__main__":
     main()
-
