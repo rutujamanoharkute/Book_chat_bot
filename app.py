@@ -1,12 +1,47 @@
 import streamlit as st
 from dotenv import load_dotenv
 import os
+import base64
+
+
 
 # Import the get_response function from your backend logic
 from query_data import get_response  # Make sure to replace with the actual module name
 
 # Load environment variables. Assumes that project contains .env file with API keys
 load_dotenv()
+
+
+@st.cache_data 
+def get_img_as_base64(file):
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+
+img = get_img_as_base64("image.jpg")
+
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+background-image: url("data:image/png;base64,{img}");
+background-size: 100%;
+background-position: top left;
+
+}}
+
+
+
+[data-testid="stHeader"] {{
+background: rgba(0,0,0,0);
+}}
+
+
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 st.title("Book Information Chatbot")
 
@@ -28,5 +63,6 @@ if st.button("Submit"):
             st.write("### Sources")
             for source in sources:
                 st.write(f"- {source}")
+                break
     else:
         st.write("Please enter a question.")
