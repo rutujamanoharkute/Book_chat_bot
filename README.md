@@ -83,3 +83,6 @@ https://youtu.be/X7e5WcKyQb0
 ---
 
 This README provides a concise and clear guide to setting up and using the book chatbot project based on Prof. Nik Bear Brown's book through a Streamlit interface. Make sure to replace placeholder links and commands with actual ones as necessary.
+
+###License
+This project is licensed under the MIT License. See the LICENSE file for details.
