@@ -1,4 +1,7 @@
 # Book Chatbot Based on Prof. Nik Bear Brown's Book
+#### Tutorial Video
+For a detailed walkthrough, watch the step-by-step tutorial video: 
+https://youtu.be/X7e5WcKyQb0
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/011144f9-2e2c-4d6d-a0b2-2c2fcc53291e">
 
 
@@ -75,6 +78,7 @@ export OPENAI_API_KEY='your-openai-api-key'
 
 #### Tutorial Video
 For a detailed walkthrough, watch the step-by-step tutorial video: 
+https://youtu.be/X7e5WcKyQb0
 
 ---
 
